@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Video Manager</title>
+<link rel="stylesheet" href="css/styles.css"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$( document ).ready( function() {
+    $( '#sayHello' ).click( function( event ) {
+        event.preventDefault();
+
+        var result = $( '#result' ),
+            name = $.trim( $( '#name' ).val() );
+
+        result.removeClass( 'invalid' );
+
+        if( !name || !name.length ) {
+            result.addClass( 'invalid' ).text( 'A name is required!' );
+            return;
+        }
+        //console.log("clicked: " + name);
+        $.ajax( '/rest/api/videos/json/' + name, {
+            dataType:'json',
+            data:{},
+            type:'POST',
+            success:function ( data ) {
+                //console.log("success: " + data.result);
+                $( '#result' ).text( data.result );
+            }
+        })
+        .error( function() {
+            //console.log("error");
+        });
+    });
+}); // (document).ready
+</script>
+</head>
+<body>
+<h3>Video Manager</h3>
+<form name="theForm">
+    <fieldset>
+        <label for="name" id="name_label">Name</label>
+        <input name="name" id="name" type="text" required placeholder="Your Name"/>
+        <input type="submit" id="sayHello" value="Say Hello"/><span id="result"></span>
+    </fieldset>
+</form>
+
+</body>
+</html>
