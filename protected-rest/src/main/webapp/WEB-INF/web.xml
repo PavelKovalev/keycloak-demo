@@ -5,4 +5,24 @@
         <servlet-name>javax.ws.rs.core.Application</servlet-name>
         <url-pattern>/api/videos/*</url-pattern>
     </servlet-mapping>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>video-portal</web-resource-name>
+            <url-pattern>/api/videos/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>video-user</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <login-config>
+        <auth-method>KEYCLOAK</auth-method>
+        <realm-name>videomanager</realm-name>
+    </login-config>
+
+    <security-role>
+        <role-name>video-user</role-name>
+    </security-role>
+
 </web-app>

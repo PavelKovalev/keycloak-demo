@@ -1,0 +1,16 @@
+{
+    "realm": "videomanager",
+    "resource": "video-portal",
+    "realm-public-key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlNnecEVAlA1yg5X7UocuIdgUneT1B7Rd66g7bx0+ip/cI8dTf92Xhqve7nXm16HWf4oS9gC/Dizq9BpMvGOP7gO2JsFYR/USU/NAcgStUpvlxD0Y92P0j53KcygLNORazaCBIb58+BaBvF5bslACFzXXx9qlR6xHDr8DuR0rkiIrsrJRSdWHUqVHQtsQ+sv2wCqZ3KpM+kzZs4ptdo1VDFNpHfXoU7XhkAJuUGXKH1zfOwq0XEaRFUL/MjjGZAy6eQni+tfHdKJXzHKtMhBT665mJ3cYajw2RGcADSzSfcJjllh7GXTFfu9eTlrfpqpV9v7hu0CfzUTDeI2rrzbWuQIDAQAB",
+    "auth-server-url": "/auth",
+    "ssl-required": "external",
+    "expose-token": true,
+    "credentials": {
+        "jwt": {
+            "client-keystore-file": "classpath:keystore.jks",
+            "client-keystore-type": "JKS",
+            "client-keystore-password": "q",
+            "client-key-alias": "video-portal"
+        }
+    }
+}

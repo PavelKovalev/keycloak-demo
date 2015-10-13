@@ -17,6 +17,7 @@
 package com.ebt;
 
 import javax.inject.Inject;
+import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -34,7 +35,7 @@ public class VideoRest {
     @Inject
     VideoService videoService;
 
-    @POST
+    @GET
     @Path("/json/{name}")
     @Produces("application/json")
     public String getHelloWorldJSON(@PathParam("name") String name) {
@@ -42,7 +43,7 @@ public class VideoRest {
         return "{\"result\":\"" + videoService.createHelloMessage(name) + "\"}";
     }
 
-    @POST
+    @GET
     @Path("/xml/{name}")
     @Produces("application/xml")
     public String getHelloWorldXML(@PathParam("name") String name) {

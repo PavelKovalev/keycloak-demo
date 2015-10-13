@@ -22,7 +22,7 @@ $( document ).ready( function() {
         $.ajax( '/rest/api/videos/json/' + name, {
             dataType:'json',
             data:{},
-            type:'POST',
+            type:'GET',
             success:function ( data ) {
                 //console.log("success: " + data.result);
                 $( '#result' ).text( data.result );
