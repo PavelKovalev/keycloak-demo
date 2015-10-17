@@ -5,6 +5,7 @@
     "auth-server-url": "/auth",
     "ssl-required": "external",
     "expose-token": true,
+    "bearer-only": true,
     "credentials": {
         "jwt": {
             "client-keystore-file": "classpath:keystore.jks",
