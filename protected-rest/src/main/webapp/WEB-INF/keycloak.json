@@ -1,17 +1,8 @@
 {
-    "realm": "videomanager",
-    "resource": "video-portal",
-    "realm-public-key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlNnecEVAlA1yg5X7UocuIdgUneT1B7Rd66g7bx0+ip/cI8dTf92Xhqve7nXm16HWf4oS9gC/Dizq9BpMvGOP7gO2JsFYR/USU/NAcgStUpvlxD0Y92P0j53KcygLNORazaCBIb58+BaBvF5bslACFzXXx9qlR6xHDr8DuR0rkiIrsrJRSdWHUqVHQtsQ+sv2wCqZ3KpM+kzZs4ptdo1VDFNpHfXoU7XhkAJuUGXKH1zfOwq0XEaRFUL/MjjGZAy6eQni+tfHdKJXzHKtMhBT665mJ3cYajw2RGcADSzSfcJjllh7GXTFfu9eTlrfpqpV9v7hu0CfzUTDeI2rrzbWuQIDAQAB",
-    "auth-server-url": "/auth",
-    "ssl-required": "external",
-    "expose-token": true,
-    "bearer-only": true,
-    "credentials": {
-        "jwt": {
-            "client-keystore-file": "classpath:keystore.jks",
-            "client-keystore-type": "JKS",
-            "client-keystore-password": "q",
-            "client-key-alias": "video-portal"
-        }
-    }
+  "realm": "videomanager",
+  "realm-public-key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi4nPMBmuZEChvMzihvjDMlY2kWrqRvxISudP4Sokm6gTQXOD6AW8dqNCUgsUlg3UioHFvkZJko0yZFNIo1Z3LkbgC3kVX7uEBfup6+1yw83SPTPiuMU/2O3jsQoACysqTKBI2P9KxBZ88AZp/M1qKQ8Zqo5S76aNJZXvvK7hidWRwxOG41X0zT3/mZ3cp0fQmw9dLLBIDQ88Ry0fduAIzLG1v93R/8pUURwHCspAnb0DTPqj8n7/wvFu/o8wwcucvkJxDY7TldENkBc2XrKyjG2ialmPJkUwajtfKLjvdcJr25rlWiKFUhBh+nDURa6oFVhiW0Hc7zT3m+5pKLUfcQIDAQAB",
+  "bearer-only": true,
+  "auth-server-url": "http://localhost:8080/auth",
+  "ssl-required": "external",
+  "resource": "video-rest-service"
 }

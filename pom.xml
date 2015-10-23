@@ -24,6 +24,7 @@
         <maven.compiler.target>1.7</maven.compiler.target>
         <maven.compiler.source>1.7</maven.compiler.source>
         <version.jboss.bom>9.0.0.Final</version.jboss.bom>
+        <version.keycloak>1.6.0.Final</version.keycloak>
     </properties>
 
     <dependencyManagement>
@@ -39,12 +40,12 @@
             <dependency>
                 <groupId>org.keycloak</groupId>
                 <artifactId>keycloak-core</artifactId>
-                <version>1.5.0-Final</version>
+                <version>${version.keycloak}</version>
             </dependency>
             <dependency>
                 <groupId>org.keycloak</groupId>
                 <artifactId>keycloak-adapter-core</artifactId>
-                <version>1.5.0-Final</version>
+                <version>${version.keycloak}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
