@@ -41,6 +41,9 @@ release.properties
 *.ipr
 *.iws
 
+## JRebel
+rebel.xml
+
 # JIRA plugin
 atlassian-ide-plugin.xml
 

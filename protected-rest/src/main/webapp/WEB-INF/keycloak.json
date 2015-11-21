@@ -1,8 +1,0 @@
-{
-  "realm": "videomanager",
-  "realm-public-key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi4nPMBmuZEChvMzihvjDMlY2kWrqRvxISudP4Sokm6gTQXOD6AW8dqNCUgsUlg3UioHFvkZJko0yZFNIo1Z3LkbgC3kVX7uEBfup6+1yw83SPTPiuMU/2O3jsQoACysqTKBI2P9KxBZ88AZp/M1qKQ8Zqo5S76aNJZXvvK7hidWRwxOG41X0zT3/mZ3cp0fQmw9dLLBIDQ88Ry0fduAIzLG1v93R/8pUURwHCspAnb0DTPqj8n7/wvFu/o8wwcucvkJxDY7TldENkBc2XrKyjG2ialmPJkUwajtfKLjvdcJr25rlWiKFUhBh+nDURa6oFVhiW0Hc7zT3m+5pKLUfcQIDAQAB",
-  "bearer-only": true,
-  "auth-server-url": "http://localhost:8080/auth",
-  "ssl-required": "external",
-  "resource": "video-rest-service"
-}
