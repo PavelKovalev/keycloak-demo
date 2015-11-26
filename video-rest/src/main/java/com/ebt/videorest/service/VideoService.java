@@ -24,9 +24,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * A simple CDI service which is able to say hello to someone
+ * Видео сервис.
  *
- * @author Pete Muir
+ * @author East Banc Technologies (http://eastbanctech.ru/)
  */
 public class VideoService {
 

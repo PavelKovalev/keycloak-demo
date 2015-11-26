@@ -4,9 +4,9 @@ import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 /**
- * .
+ * Определение JAX-RS приложения.
  *
- * @author Pavel Vasilenko
+ * @author East Banc Technologies (http://eastbanctech.ru/)
  */
 @ApplicationPath("/")
 public class VideoRestApp extends Application {

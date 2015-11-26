@@ -12,9 +12,9 @@ import javax.ws.rs.Produces;
 import java.util.List;
 
 /**
- * .
+ * REST сервис.
  *
- * @author Pavel Vasilenko
+ * @author East Banc Technologies (http://eastbanctech.ru/)
  */
 @Path("/")
 @Produces("application/json")
