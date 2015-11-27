@@ -5,6 +5,6 @@
     <!-- Declare to use KEYCLOAK authentication method -->
     <login-config>
         <auth-method>KEYCLOAK</auth-method>
-        <!--<realm-name>not used</realm-name>-->
+        <realm-name>videomanager</realm-name>
     </login-config>
 </web-app>
